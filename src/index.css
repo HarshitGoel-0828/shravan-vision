@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for Shravan Vision */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-bg {
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+}
+
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-secondary {
+  @apply bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded;
+}
+
+.card {
+  @apply bg-white p-6 rounded-lg shadow-lg;
+}
+
+.video-box {
+  @apply bg-black rounded-lg overflow-hidden;
+}
+
+video {
+  @apply w-full h-auto;
+}
