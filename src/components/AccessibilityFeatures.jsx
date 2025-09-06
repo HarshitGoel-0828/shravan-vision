@@ -46,7 +46,7 @@ const AccessibilityFeatures = () => {
         </div>
         <div className="card mt-8">
           <h3 className="text-xl font-bold mb-4">Help Guide</h3>
-          <p className="mb-4">Welcome to Shravan Vision! Here's how to get started:</p>
+          <p className="mb-4">Welcome to Shravan Vision! Here&apos;s how to get started:</p>
           <ul className="list-disc list-inside space-y-2">
             <li>Click "Start Translation" to begin real-time ISL translation.</li>
             <li>Use the toggles to enable live video, voice input, or output options.</li>
