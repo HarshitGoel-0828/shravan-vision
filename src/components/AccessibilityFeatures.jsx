@@ -7,32 +7,32 @@ const AccessibilityFeatures = () => {
   const [largeFonts, setLargeFonts] = useState(false);
 
   return (
-    <div className="py-16">
+    <div className="py-16 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-8">Accessibility Features</h2>
+        <h2 className="text-3xl font-bold text-center mb-8 text-white">Accessibility Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="card">
+          <div className="card bg-white bg-opacity-90 p-6 rounded shadow-lg">
             <h3 className="text-xl font-bold mb-4">Settings</h3>
             <div className="space-y-4">
-              <label className="flex items-center">
+              <label className="flex items-center text-gray-900">
                 <input type="checkbox" checked={hapticFeedback} onChange={() => setHapticFeedback(!hapticFeedback)} className="mr-2" />
                 Haptic Feedback
               </label>
-              <label className="flex items-center">
+              <label className="flex items-center text-gray-900">
                 <input type="checkbox" checked={offlineMode} onChange={() => setOfflineMode(!offlineMode)} className="mr-2" />
                 Offline Mode
               </label>
-              <label className="flex items-center">
+              <label className="flex items-center text-gray-900">
                 <input type="checkbox" checked={arLearning} onChange={() => setArLearning(!arLearning)} className="mr-2" />
                 AR Learning Mode
               </label>
-              <label className="flex items-center">
+              <label className="flex items-center text-gray-900">
                 <input type="checkbox" checked={largeFonts} onChange={() => setLargeFonts(!largeFonts)} className="mr-2" />
                 Large Readable Fonts
               </label>
             </div>
           </div>
-          <div className="card">
+          <div className="card bg-white bg-opacity-90 p-6 rounded shadow-lg">
             <h3 className="text-xl font-bold mb-4">Regional Settings</h3>
             <select className="w-full border rounded px-4 py-2 mb-4">
               <option>Select Regional Sign Language</option>
@@ -44,10 +44,10 @@ const AccessibilityFeatures = () => {
             <button className="btn-primary">Save Settings</button>
           </div>
         </div>
-        <div className="card mt-8">
+        <div className="card mt-8 bg-white bg-opacity-90 p-6 rounded shadow-lg">
           <h3 className="text-xl font-bold mb-4">Help Guide</h3>
-          <p className="mb-4">Welcome to Shravan Vision! Here's how to get started:</p>
-          <ul className="list-disc list-inside space-y-2">
+          <p className="mb-4 text-gray-900">Welcome to Shravan Vision! Here&apos;s how to get started:</p>
+          <ul className="list-disc list-inside space-y-2 text-gray-900">
             <li>Click "Start Translation" to begin real-time ISL translation.</li>
             <li>Use the toggles to enable live video, voice input, or output options.</li>
             <li>Upload videos or enter text for translation.</li>

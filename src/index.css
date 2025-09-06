@@ -8,11 +8,28 @@ body {
 }
 
 .hero-bg {
-  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  background: linear-gradient(135deg, #667eea, #764ba2, #f093fb, #f5576c);
 }
 
 .btn-primary {
-  @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  @apply bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary.bg-blue-600 {
+  /* Removed to fix circular dependency */
+}
+
+.btn-primary.bg-green-500 {
+  /* Removed to fix circular dependency */
+}
+
+.btn-primary.bg-purple-500 {
+  /* Removed to fix circular dependency */
+}
+
+.btn-primary.bg-orange-500 {
+  /* Removed to fix circular dependency */
 }
 
 .btn-secondary {
